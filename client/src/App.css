@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="username"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="username"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* Center the jumbotron content vertically and horizontally */
+.jumbotron.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Adjust as needed */
+}
+
+/* Style the container inside the jumbotron */
+.container {
+  text-align: center;
+}
+
+/* Style the Font Awesome icon */
+.fa-key {
+  color: #007bff; /* Adjust color as needed */
+}
+
+/* Style the Register and Login buttons */
+.btn {
+  margin: 10px; /* Add some spacing between buttons */
+}
+
+
+/* Header styles */
+header {
+  background-color: #f5ba13;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+.header-left {
+  flex: 1; /* Takes up available space */
+}
+
+.header-left h1 {
+  margin-right: 10px;
+}
+
+.header-left p {
+  color: #fff;
+  font-size: 24px; /* Adjust the font size */
+  font-weight: bold; /* Add bold font weight */
+  text-align: center; /* Center align */
+  flex: 1; /* Take up available space */
+}
+
+.header-right {
+  margin-left: auto; /* Pushes logout button to the right */
+}
+
+/* Footer styles */
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+/* Note styles */
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #f5ba13;
+  border: none;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+}
+/* Form styles */
+.noteform {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+.noteform input,
+.noteform textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+
+.noteform button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+.displayuser {
+  text-align: center;
+  margin-top: 50px; /* Adjust as needed */
+  font-size: 24px; /* Adjust font size as needed */
+  color: #333; /* Adjust text color as needed */
+}
+/* CSS for the delete button */
+.delbut {
+  background-color: transparent;
+  border: 1px solid red; /* Adding border */
+  color: red;
+  cursor: pointer;
+  font-size: 12px; /* Smaller font size */
+  padding: 3px 8px; /* Adjusted padding */
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Added transform transition */
+}
+
+/* CSS for the hover effect */
+.delbut:hover {
+  
+  color: red; /* Change text color on hover */
+  transform: scale(0.95); /* Slightly scale down on hover */
+}
+
+
